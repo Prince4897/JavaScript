@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<script type="text/javascript">
+      function Student()
+      {
+        this.name="Prince";
+        this.gender="Male";
+      }
+
+      var obj=new Student();
+
+      Student.prototype.sayHello=function()
+      {
+        alert("Hello");
+      };
+
+      var obj1=new Student();
+      var proto1=Object.getPrototypeOf(obj1);
+      alert(proto1.constructor);
+</script>
+  </body>
+</html>
